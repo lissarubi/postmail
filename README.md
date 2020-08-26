@@ -10,28 +10,28 @@ You can install PostMail with NPM, executing:
 
 # Usage
 
-First, you need to define your email, and your password. Run:
+First, you need to define your mail, and your password. Run:
 
 `postmail --config`
 
-the prompt will ask your email and password, only complete your credentials normally.
+the prompt will ask your mail and password, only complete your credentials normally.
 
 ```
-Your Email: myemail@gmail.com
+Your Email: myMail@gmail.com
 Your Password: *********
 ```
 
 ## Plain Text
 
-Now, you can send a email, defining the mail/mails what you want to send your mail, the subject, and the plain text.
+Now, you can send a mail, defining the mail/mails what you want to send your mail, the subject, and the plain text.
 
-`postmail --email anotherMail@gmail --subject Hello! --message like PostMail!`
+`postmail --mail anotherMail@gmail --subject Hello! --message like PostMail!`
 
 ## Markdown
 
 You can create a markdown file, and send this markdown file to the PostMail, like this:
 
-`postmail --email anotherMail@gmail --subject Hello! --file myMarkdown.md`
+`postmail --mail anotherMail@gmail --subject Hello! --file myMarkdown.md`
 
 and the `MyMarkdown.md` can the any markdown file, with HTML tags or not, like this:
 
