@@ -1,6 +1,6 @@
 {
   "name": "postmail",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "a Nodejs Email sender",
   "main": "src/index.js",
   "bin": {
