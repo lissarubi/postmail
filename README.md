@@ -6,7 +6,7 @@ PostMail is a program what you can very quickly send mails, written in plain tex
 
 You can install PostMail with NPM, executing:
 
-`npm install postmail`
+`npm install -g postmail`
 
 # Usage
 
