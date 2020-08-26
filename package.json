@@ -1,0 +1,40 @@
+{
+  "name": "postmail",
+  "version": "1.2.0",
+  "description": "a Nodejs Email sender",
+  "main": "src/index.js",
+  "bin": {
+    "postmail": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edersonferreira/postmail.git"
+  },
+  "keywords": [
+    "email",
+    "node",
+    "mail",
+    "mailer",
+    "post",
+    "mail",
+    "node",
+    "email",
+    "post",
+    "email"
+  ],
+  "author": "Ederson Ferreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edersonferreira/postmail/issues"
+  },
+  "homepage": "https://github.com/edersonferreira/postmail#readme",
+  "dependencies": {
+    "markdown-it": "^11.0.0",
+    "minimist": "^1.2.5",
+    "nodemailer": "^6.4.11",
+    "readline-sync": "^1.4.10"
+  }
+}
