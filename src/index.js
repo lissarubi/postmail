@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const readlineSync = require('readline-sync');
 const nodeMailer = require('nodemailer');
 const md = require('markdown-it')({ html: true });
