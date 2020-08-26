@@ -25,7 +25,7 @@ if (argv.config === true) {
 
   // define global configs to send mail
   
-  if (argv.emails != undefined && argv.subject != undefined) {
+  if (argv.email != undefined && argv.subject != undefined) {
     const settings = JSON.parse(
       fs.readFileSync(`/home/${username}/.postmail.json`),
     );
@@ -42,7 +42,7 @@ if (argv.config === true) {
     if (argv.message != undefined) {
       var mailOptions = {
         from: settings.email,
-        to: argv.emails,
+        to: argv.email,
         subject: argv.subject,
         text: argv.message,
       };
@@ -55,7 +55,7 @@ if (argv.config === true) {
         const htmlMessage = md.render(file);
         var mailOptions = {
           from: settings.email,
-          to: argv.emails,
+          to: argv.email,
           subject: argv.subject,
           html: htmlMessage,
         };
