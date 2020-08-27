@@ -23,15 +23,15 @@ Your Password: *********
 
 ## Plain Text
 
-Now, you can send a mail, defining the mail/mails what you want to send your mail, the subject, and the plain text.
+Now, you can send a email, defining the email/emails what you want to send your email, the subject, and the plain text.
 
-`postmail --mail anotherMail@gmail --subject Hello! --message like PostMail!`
+`postmail --email anotherMail@gmail --subject Hello! --message like PostMail!`
 
 ## Markdown
 
 You can create a markdown file, and send this markdown file to the PostMail, like this:
 
-`postmail --mail anotherMail@gmail --subject Hello! --file myMarkdown.md`
+`postmail --email anotherMail@gmail --subject Hello! --file myMarkdown.md`
 
 and the `MyMarkdown.md` can the any markdown file, with HTML tags or not, like this:
 
