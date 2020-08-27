@@ -10,13 +10,13 @@ const username = require('os').userInfo().username;
 
 // define the mail and password
 if (argv.config === true) {
-  const mail = readlineSync.question('Your Email: ');
+  const email = readlineSync.question('Your Email: ');
   const password = readlineSync.question('Your Password: ', {
     hideEchoBack: true,
   });
 
   data = `{
-    "mail": "${mail}",
+    "email": "${email}",
     "password": "${password}"
 }`;
 
@@ -25,7 +25,7 @@ if (argv.config === true) {
 
   // define global configs to send mail
   
-  if (argv.mail != undefined && argv.subject != undefined) {
+  if (argv.email != undefined && argv.subject != undefined) {
     const settings = JSON.parse(
       fs.readFileSync(`/home/${username}/.postmail.json`),
     );
@@ -33,7 +33,7 @@ if (argv.config === true) {
     var transporter = nodeMailer.createTransport({
       service: 'gmail',
       auth: {
-        user: settings.mail,
+        user: settings.email,
         pass: settings.password,
       },
     });
@@ -41,8 +41,8 @@ if (argv.config === true) {
     // use the plain text mail
     if (argv.message != undefined) {
       var mailOptions = {
-        from: settings.mail,
-        to: argv.mail,
+        from: settings.email,
+        to: argv.email,
         subject: argv.subject,
         text: argv.message,
       };
@@ -54,8 +54,8 @@ if (argv.config === true) {
         const file = fs.readFileSync(argv.file, 'utf8');
         const htmlMessage = md.render(file);
         var mailOptions = {
-          from: settings.mail,
-          to: argv.mail,
+          from: settings.email,
+          to: argv.email,
           subject: argv.subject,
           html: htmlMessage,
         };
